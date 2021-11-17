@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Лекція 11. Завдання 5.</title>
+</head>
+ 
+<body>
+  <script>
+      let str = prompt("Введіть слово", "");
+function correction(str)
+        {
+           var part1 = str[0];
+           var part2 = str.substring(1, str.length);
+
+            return part1.toUpperCase() + part2.toLowerCase();
+        }
+        alert(correction(str));
+  </script>
+</body>
+</html>

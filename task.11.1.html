@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Лекція 11. Завдання 1.</title>
+</head>
+ 
+<body>
+  <script>
+function readNumber() {
+    let numb;
+    do {
+      numb = prompt("Введіть число: ", 0);
+    } while ( !isFinite(numb) );
+    if (numb === null || numb === '') {
+      return null;
+    }
+    return +numb;
+  }
+  
+  alert('Ваше число: ' + readNumber());
+  </script>
+</body>
+</html>
+
